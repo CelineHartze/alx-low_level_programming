@@ -4,7 +4,6 @@
  * 
  * Return: 0
  */
-
 int main(void)
 {
     char puts[7] ="putchar";
@@ -13,7 +12,7 @@ int main(void)
     
     putchar(v);
     
-    for (i = 0; i < 7; i++);
+    for (i = 0; i < 7; i++)
     {
         putchar(puts[i]);
     }
