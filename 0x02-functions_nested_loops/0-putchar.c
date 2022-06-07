@@ -13,11 +13,11 @@ int main(void)
 	int v = '_';
 	
 	putchar(v);
-
+	
 	for (i = 0; i < 7; i++)
 	{
-	        putchar(puts[i]);
-	}	
-        putchar('\n');
+		putchar(puts[i]);
+	} 
+	putchar('\n');
 	return (0);
 }
