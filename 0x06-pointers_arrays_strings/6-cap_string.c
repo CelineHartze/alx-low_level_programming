@@ -20,19 +20,16 @@ char *cap_string(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-	
 		if (is_sep(str[i]))
 		{
 			sep_prev = 1;
 		}
-		
 		else if (sep_prev)
 		{
 			str[i] = cap_char(str[i]);
 			sep_prev = 0;
 		}
 	}
-
 	if (i > 0)
 		str[0] = cap_char(str[0]);
 
