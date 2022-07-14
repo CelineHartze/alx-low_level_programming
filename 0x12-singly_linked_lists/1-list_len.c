@@ -1,49 +1,19 @@
-/*
- * File: 1-list_len.c
- * 
- */
-
 #include "lists.h"
-
 /**
- * list_len - Finds the number of elements in
- *            a linked list_t list.
- * @h: The linked list_t list.
- *
- * Return: The number of elements in h.
+ * list_len - returns then number of elements in a list.
+ * @h: singly linked list.
+ * Return: number of elements in the list.
  */
+
 size_t list_len(const list_t *h)
 {
-	size_t elements = 0;
+	size_t nelem;
 
-	while (h)
+	nelem = 0;
+	while (h != NULL)
 	{
-		elements++;
 		h = h->next;
+		nelem++;
 	}
-
-	return (elements);
-}
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-"1-list_len.c" [New File]                                     0,0-1         All
+	return (nelem);
+}l
